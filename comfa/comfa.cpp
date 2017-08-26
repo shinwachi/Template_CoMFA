@@ -548,7 +548,7 @@ void fpredict(string modelfn, string predfn) {
 
     double intcpt;
     mdl >> intcpt;
-    double *beta = new double[nFpts];
+    double *beta = new double[nFpts * 2];
     
 //    for (int i = 0; i < 2 * nFpts; i++) mdl >> beta[i];
     for (int i = 0; i < 2 * nFpts; i++) {
