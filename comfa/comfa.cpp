@@ -558,7 +558,7 @@ void fpredict(string modelfn, string predfn) {
 	   else beta[i] = atof(stats.substr(0,comma).c_str());
     }
 
-    mpredict(nFpts, predfn, intcpt, beta, ster, elec, npts, lo);
+    mpredict(nFpts*2, predfn, intcpt, beta, ster, elec, npts, lo);
 
 }
 
